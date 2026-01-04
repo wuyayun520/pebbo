@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoFrameCenter</key>
+	<string>primaryTitleEdge</string>
+	<key>disparateCanvasTail</key>
+	<string>reductionAroundComposite</string>
+	<key>normalCompletionInset</key>
+	<string>staticParticleStatus</string>
+	<key>notifierVarStatus</key>
+	<string>requestProcessIndex</string>
+	<key>queueAtLevel</key>
+	<string>chapterTempleDirection</string>
+	<key>subtleShaderDistance</key>
+	<string>normalStateInteraction</string>
+	<key>symmetricCallbackInteraction</key>
+	<string>menuBeyondCommand</string>
+	<key>tabbarAndState</key>
+	<string>delegateJobShape</string>
+	<key>taskAndStyle</key>
+	<string>textfieldViaInterpreter</string>
+</dict>
+</plist>
