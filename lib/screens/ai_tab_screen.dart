@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../widgets/common_background.dart';
-import 'pebbo_wallet_screen.dart';
 
 class AiTabScreen extends StatefulWidget {
   const AiTabScreen({super.key});
@@ -30,10 +29,10 @@ class _AiTabScreenState extends State<AiTabScreen> {
     final currentCoins = prefs.getInt('pebboCoins') ?? 0;
     
     // 检查金币是否足够
-    if (currentCoins < _requiredCoins) {
-      _showInsufficientCoinsDialog();
-      return;
-    }
+    // if (currentCoins < _requiredCoins) {
+    //   _showInsufficientCoinsDialog();
+    //   return;
+    // }
     
     // 扣除金币
     await prefs.setInt('pebboCoins', currentCoins - _requiredCoins);
@@ -98,11 +97,7 @@ class _AiTabScreenState extends State<AiTabScreen> {
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop();
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const PebboWalletScreen(),
-                  ),
-                );
+               
               },
               child: const Text(
                 'Recharge',

@@ -9,7 +9,6 @@ import '../services/user_service.dart';
 import 'terms_of_service_screen.dart';
 import 'privacy_policy_screen.dart';
 import 'about_us_screen.dart';
-import 'pebbo_wallet_screen.dart';
 
 class MeTabScreen extends StatefulWidget {
   const MeTabScreen({super.key});
@@ -580,11 +579,7 @@ class _MeTabScreenState extends State<MeTabScreen> {
                       // Wallet Image (clickable)
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const PebboWalletScreen(),
-                            ),
-                          );
+                          
                         },
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 0),
